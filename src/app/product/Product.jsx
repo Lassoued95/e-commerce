@@ -14,6 +14,8 @@ function Product() {
   ];
 
   const productRef = useRef(null);
+  const  productRef2 = useRef(null);
+
 
   // Scroll to the right when the right arrow key is pressed
   const handleKeyDown = (e) => {
@@ -24,8 +26,20 @@ function Product() {
       if (e.key === "ArrowLeft") {
         productRef.current.scrollBy({ left: -200, behavior: "smooth" }); // Scroll to the left
       }
+      
     }
+    if (productRef2.current) {
+      if (e.key === "ArrowRight") {
+        productRef2.current.scrollBy({ left: 200, behavior: "smooth" }); // Scroll to the right
+      }
+      if (e.key === "ArrowLeft") {
+        productRef2.current.scrollBy({ left: -200, behavior: "smooth" }); // Scroll to the left
+      }
+      
+    }
+
   };
+  
 
   useEffect(() => {
     // Attach event listener when component mounts
@@ -44,8 +58,19 @@ function Product() {
     }
   };
   const scrollLeft = () => {
-    if (productReff.current) {
+    if (productRef.current) {
       productRef.current.scrollBy({ left: -200, behavior: "smooth" });
+    }
+  };
+  const scrollRight2 = () => {
+    if (productRef2.current) {
+      productRef2.current.scrollBy({ left: 200, behavior: "smooth" });
+    }
+  };
+
+  const scrollLeft2 = () => {
+    if (productRef2.current) {
+      productRef2.current.scrollBy({ left: -200, behavior: "smooth" });
     }
   };
 
@@ -54,6 +79,7 @@ function Product() {
     <>
     <div className="relative">
       {/* Product Container */}
+      {/* the first div of the products*/}
       <div
         ref={productRef}
         className="flex space-x-6 overflow-x-auto py-4 no-scrollbar"
@@ -94,8 +120,9 @@ function Product() {
     </div>
     <div className="relative">
       {/* Product Container */}
+      {/*the second product div*/}
       <div
-        ref={productRef}
+        ref={productRef2}
         className="flex space-x-6 overflow-x-auto py-4 no-scrollbar"
         id="prod"
       >
@@ -119,13 +146,13 @@ function Product() {
 
       {/* Scroll Button (Arrow) */}
       <button
-        onClick={scrollRight}
+        onClick={scrollRight2}
         className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-full shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
       >
         &rarr; {/* Right Arrow */}
       </button>
       <button
-        onClick={scrollLeft}
+        onClick={scrollLeft2}
         className="absolute top-1/2 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400  text-white p-2 rounded-full shadow-lg"
       >
       
