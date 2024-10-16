@@ -7,20 +7,22 @@ export default function Home() {
     <div className="min-h-screen bg-gray-100">
       {/* About Section */}
       <About />
+      <div className="w-[90%] h-[400px] bg-slate-200  ml-14 mt-2  rounded-tr-[40px] rounded-bl-[40px]">
+        
+      </div>
 
       {/* Image Section */}
-      <img
+      {/*<img
         src="bg3.jpg"
-        className="w-[100%] h-[30%]"
+        className="  mt-4"
         alt="Background"
-      />
-
+      />*/}
       {/* Product Section */}
       <Product />
 
       {/* Footer Section */}
-      <footer className="w-full p-4 bg-blue-500 text-white text-center">
-        <p>© 2024 Mohamed Lassoued. All rights reserved.</p>
+      <footer className="w-full p-4 bg-black text-white text-center">
+        <p>© 2024 L&B Bazaar. All rights reserved.</p>
       </footer>
     </div>
   );

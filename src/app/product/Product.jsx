@@ -82,21 +82,21 @@ function Product() {
       {/* the first div of the products*/}
       <div
         ref={productRef}
-        className="flex space-x-6 overflow-x-auto py-4 no-scrollbar"
+        className="flex space-x-6 overflow-x-hidden py-4 no-scrollbar"
         id="prod"
       >
         {products.map((product) => (
           <div
             key={product.id}
-            className="border p-4 rounded-lg min-w-[200px] flex-shrink-0"
+            className="border p-4 rounded-lg min-w-[200px] h-[250px] flex-shrink-0 overflow-y-hidden  "
           >
             <img
               src={product.image}
-              className="w-full h-48 object-cover mb-4"
+              className="w-full h-48 object-cover mb-4 mt-[-60px]"
               alt={product.name}
             />
             <h1 className="text-xl font-semibold">{product.name}</h1>
-            <button className="float-right bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50">
+            <button className="float-right  bg-black  text-white font-bold py-2 px-4 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2focus:ring-opacity-50">
               Buy Now
             </button>
           </div>
@@ -106,13 +106,13 @@ function Product() {
       {/* Scroll Button (Arrow) */}
       <button
         onClick={scrollRight}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-full shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black  text-white p-2 rounded-full shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
       >
         &rarr; {/* Right Arrow */}
       </button>
       <button
         onClick={scrollLeft}
-        className="absolute top-1/2 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400  text-white p-2 rounded-full shadow-lg"
+        className="absolute top-1/2 transform -translate-y-1/2 bg-black  hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400  text-white p-2 rounded-full shadow-lg"
       >
       
       &larr; {/* Right Arrow */}
@@ -123,21 +123,21 @@ function Product() {
       {/*the second product div*/}
       <div
         ref={productRef2}
-        className="flex space-x-6 overflow-x-auto py-4 no-scrollbar"
+        className="flex space-x-6 overflow-x-hidden py-4 no-scrollbar"
         id="prod"
       >
         {products.map((product) => (
           <div
             key={product.id}
-            className="border p-4 rounded-lg min-w-[200px] flex-shrink-0"
+            className="border p-4 rounded-lg min-w-[200px]  h-[250px]  flex-shrink-0 overflow-y-hidden"
           >
             <img
               src={product.image}
-              className="w-full h-48 object-cover mb-4"
+              className="w-full h-48 object-cover mb-4 mt-[-60px]"
               alt={product.name}
             />
             <h1 className="text-xl font-semibold">{product.name}</h1>
-            <button className="float-right bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50">
+            <button className="float-right bg-black  text-white font-bold py-2 px-4 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none  focus:ring-opacity-50">
               Buy Now
             </button>
           </div>
@@ -147,13 +147,13 @@ function Product() {
       {/* Scroll Button (Arrow) */}
       <button
         onClick={scrollRight2}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-full shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black  text-white p-2 rounded-full shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
       >
         &rarr; {/* Right Arrow */}
       </button>
       <button
         onClick={scrollLeft2}
-        className="absolute top-1/2 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400  text-white p-2 rounded-full shadow-lg"
+        className="absolute top-1/2 transform -translate-y-1/2 bg-black  hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400  text-white p-2 rounded-full shadow-lg"
       >
       
       &larr; {/* Right Arrow */}
