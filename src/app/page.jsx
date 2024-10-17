@@ -7,7 +7,7 @@ export default function Home() {
     <div className="min-h-screen bg-gray-100">
       {/* About Section */}
       <About />
-      <div className="w-[80%] h-[450px] bg-slate-200  ml-[8%] mt-2  rounded-tr-[40px] rounded-bl-[40px]">
+     
         <img 
           src="air.png"
           className="ml-[55%] h-[450px] "
@@ -24,7 +24,7 @@ export default function Home() {
   </button>
 </div>
 
-      </div>
+     
 
       {/* Image Section */}
       {/*<img
