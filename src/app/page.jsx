@@ -13,7 +13,7 @@ export default function Home() {
           className="ml-[55%] h-[450px] "
         />
       <div class="bg-black text-center py-20 mt-[-37%] h-[450px] animate-zoomIn">
-  <h1 class="text-4xl md:text-6xl font-bold text-white tracking-wide uppercase mb-4">
+  <h1 class="text-4xl md:text-6gxl font-bold text-white tracking-wide uppercase mb-4">
     Step Into Comfort and Style
   </h1>
   <p class="text-lg md:text-2xl text-gray-200 mb-6">
