@@ -106,7 +106,7 @@ function Product() {
       {/* Scroll Button (Arrow) */}
       <button
         onClick={scrollRight}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black  text-white p-2 rounded-full shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black  text-yellow-400npm p-2 rounded-full shadow-lg hover:bg-black focus:outline-none focus:ring-2 focus:ring-blue-400"
       >
         &rarr; {/* Right Arrow */}
       </button>
