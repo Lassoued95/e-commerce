@@ -118,6 +118,7 @@ function Product() {
       &larr; {/* Right Arrow */}
       </button>
     </div>
+    
     <div className="relative">
       {/* Product Container */}
       {/*the second product div*/}

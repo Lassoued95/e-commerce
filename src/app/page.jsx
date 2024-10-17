@@ -19,7 +19,7 @@ export default function Home() {
   <p class="text-lg md:text-2xl text-gray-200 mb-6">
     Discover the latest collections designed for every adventure.
   </p>
-  <button class="mt-4 bg-white text-blue-800 font-bold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+  <button class="mt-4 bg-white text-yellow-400  font-bold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
     Shop Now
   </button>
 </div>
