@@ -12,7 +12,7 @@ export default function Home() {
           src="air.png"
           className="ml-[55%] h-[450px] "
         />
-      <div class="bg-white text-center py-20 mt-[-37%] h-[450px] animate-zoomIn">
+      <div class="bg-black text-center py-20 mt-[-37%] h-[450px] animate-zoomIn">
   <h1 class="text-4xl md:text-6xl font-bold text-white tracking-wide uppercase mb-4">
     Step Into Comfort and Style
   </h1>
