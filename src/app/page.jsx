@@ -1,47 +1,32 @@
 import React from "react";
 import About from "./navbar/About.jsx";
 import Product from "./product/Product.jsx";
-import Search from "./search/Search.jsx";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* About Section */}
       <About />
-<<<<<<< HEAD
-     <Search/>
-=======
-     
->>>>>>> e70aba43245262839e5a4aaed8a83b304ce2de90
-        <img 
-          src="air.png"
-          className="ml-[55%] h-[450px] "
-        />
-<<<<<<< HEAD
-      <div class="bg-black text-center py-20 mt-[-30%] h-[500px] animate-zoomIn">
-  <h1 class="text-6xl md:text-6gxl font-bold text-white tracking-wide uppercase mb-4">
-=======
-      <div class="bg-black text-center py-20 mt-[-37%] h-[450px] animate-zoomIn">
-  <h1 class="text-4xl md:text-6gxl font-bold text-white tracking-wide uppercase mb-4">
->>>>>>> e70aba43245262839e5a4aaed8a83b304ce2de90
-    Step Into Comfort and Style
-  </h1>
-  <p class="text-lg md:text-3xl text-gray-200 mb-6">
-    Discover the latest collections designed for every adventure.
-  </p>
-  <button class="mt-4 bg-white text-yellow-800  font-bold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-    Shop Now
-  </button>
-</div>
-
-     
-
+      
       {/* Image Section */}
-      {/*<img
-        src="bg3.jpg"
-        className="  mt-4"
-        alt="Background"
-      />*/}
+      <img 
+        src="air.png"
+        className="ml-[55%] h-[450px]"
+      />
+
+      {/* Promo Section */}
+      <div className="bg-black text-center py-20 mt-[-30%] h-[500px] animate-zoomIn">
+        <h1 className="text-6xl md:text-6gxl font-bold text-white tracking-wide uppercase mb-4">
+          Step Into Comfort and Style
+        </h1>
+        <p className="text-lg md:text-3xl text-gray-200 mb-6">
+          Discover the latest collections designed for every adventure.
+        </p>
+        <button className="mt-4 bg-white text-yellow-800 font-bold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+          Shop Now
+        </button>
+      </div>
+
       {/* Product Section */}
       <Product />
 
