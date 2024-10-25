@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 function About(){
 
   const navigate=useNavigate();
-  
+
     return(
      <>
   <div className="w-full flex justify-between items-center mt-0 bg-black text-slate-50 py-4 px-8">
