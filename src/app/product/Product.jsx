@@ -18,7 +18,7 @@ function Product() {
 
   const [searchTerm, setSearchTerm] = useState(""); // État pour la recherche
   const [filterCategory, setFilterCategory] = useState(""); // État pour la catégorie active
-  const productRef = useRef(null);
+ 
 
   // Fonction pour gérer la recherche
   const handleSearch = (e) => {
@@ -82,7 +82,7 @@ function Product() {
         {/* Container pour les produits filtrés */}
         <div className="w-full h-auto">
           <div
-            ref={productRef}
+           
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-4"
           >
             {filteredProducts.map((product) => (

@@ -2,8 +2,6 @@
 import React from "react";
 function About(){
 
-
-  
     return(
      <>
   <div className="w-full flex justify-between items-center mt-0 bg-black text-slate-50 py-4 px-8">
