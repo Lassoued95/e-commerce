@@ -26,7 +26,9 @@ function About(){
         Contact
       </a>
     </nav>
+       
   </div>
+ 
 </>
 
     

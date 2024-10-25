@@ -1,32 +1,22 @@
 "use client";
-import About from "./navbar/About.jsx";
-import Product from "./product/Product.jsx";
-import Home from "./hom/Home.jsx";
-import Discount from "./Discount/Discount.jsx";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./app.jsx"; // Ensure the correct path
+import About from "./navbar/About.jsx"
+import Product from "./product/Product.jsx"
+import Discount from "./discount/Discount.jsx"; // Ensure the correct path
 
-export default function Page() {
-  return (
-    <div className="min-h-screen bg-gray-100">
-      <Router>
-        {/* Afficher About en haut sur toutes les pages */}
-        <About />
+const App = () => {
+    return (
+        <Router>
+            <About/>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/show-products" element={<Product/>}/>
+                <Route path="/order-sammuray" element={<Discount />} />
+            </Routes>
+        </Router>
+    );
+};
 
-        {/* Routes : le contenu change en fonction de la route */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-    
-          <Route path="/Discount/Discount" element={<Discount />} />
-           </Routes>
-
-        {/* Afficher Product et Discount sur toutes les pages */}
-           <Product />
-
-        {/* Footer visible sur toutes les pages */}
-        <footer className="w-full p-4 bg-black text-white text-center">
-          <p>© 2024 L&B Bazaar. All rights reserved.</p>
-        </footer>
-      </Router>
-    </div>
-  );
-}
+export default App;
