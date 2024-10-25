@@ -1,6 +1,9 @@
 "use clinet";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 function About(){
+
+  const navigate=useNavigate();
 
     return(
      <>
@@ -8,6 +11,7 @@ function About(){
     <h1 className="text-2xl">L&B Bazaar</h1>
     <nav className="flex space-x-8 ">
       <a
+      onClick={() => navigate(show-products)}
         href="#prod"
         className="px-4 border-b-1 border-transparent hover:border-b-2 transition duration-300 hover:border-yellow-500"
       >
