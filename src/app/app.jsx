@@ -7,11 +7,10 @@ const Home = () => {
     const navigate1 = useNavigate();
 
     return (
-        <div className="min-h-screen bg-gray-100">
-          {/* About Section */}
+        <div className="min-h-screen">
+         
      
     
-          {/* Image Section */}
           <img 
             src="air.png"
             className="ml-[55%] h-[55%] animate-sabat"
