@@ -15,11 +15,13 @@ function Discount() {
                 onClick={() => navigate("/")} // Next.js navigation
                 className="mt-4 bg-blue-500 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-blue-600 transition duration-300 ease-in-out"
             >
+
                 Go back
               
             </button>
         </div>
     );
 }
+
 
 export default Discount;
