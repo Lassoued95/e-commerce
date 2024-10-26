@@ -8,14 +8,21 @@ import Discount from "./discount/Discount.jsx"; // Ensure the correct path
 
 const App = () => {
     return (
+        <>
         <Router>
             <About/>
+           
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/show-products" element={<Product/>}/>
+               
                 <Route path="/order-sammuray" element={<Discount />} />
             </Routes>
+            <Product/>
         </Router>
+        <footer className="w-full p-4 bg-black text-white text-center mt-[2%]">
+            <p>© 2024 L&B Bazaar. All rights reserved.</p>
+          </footer>
+        </>
     );
 };
 
