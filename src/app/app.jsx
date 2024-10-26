@@ -34,19 +34,11 @@ const Home = () => {
           </div>
            <div>
 
-          <button 
-              onClick={() => navigate("/show-products")}
-              className="mt-4 bg-white text-yellow-400 font-bold py-3 px-6 rounded-lg shadow-md hover:bg-gray-100 hover:shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
-            >
-              Show products
-            </button>
+         
           </div>
          
     
-          {/* Footer Section */}
-          <footer className="w-full p-4 bg-black text-white text-center">
-            <p>© 2024 L&B Bazaar. All rights reserved.</p>
-          </footer>
+         
          
         </div>
       );
