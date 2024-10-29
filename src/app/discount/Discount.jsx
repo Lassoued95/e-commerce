@@ -1,38 +1,25 @@
+"use client";
+import React from "react";
+import { useNavigate } from "react-router-dom";
+
 function Discount() {
-  const products = [
-    { id: 1, name: "Sneakers", image: "im1.jpg" },
-    { id: 2, name: "sabat", image: "im2.jpg" },
-    { id: 3, name: "sabat", image: "im3.jpg" },
-    { id: 4, name: "sabat", image: "im4.jpg" },
-    { id: 5, name: "sabat", image: "im5.jpg" },
-    { id: 6, name: "sabat", image: "im1.jpg" },
-    { id: 7, name: "sabat", image: "im2.jpg" },
-    { id: 8, name: "sabat", image: "im3.jpg" },
-    
-    { id: 10, name: "serwel", image: "serwel1.avif"},
+    const navigate = useNavigate();
 
-  ];
-
-  return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-4">
-      {products.map((product) => (
-        <div
-          key={product.id}
-          className="border p-4 rounded-lg min-w-[200px] h-[350px] flex-shrink-0 overflow-y-hidden"
-        >
-          <img
-            src={product.image}
-            className="w-full h-48 object-cover mb-4 mt-[10px]"
-            alt={product.name}
-          />
-          <h1 className="text-xl font-semibold">{product.name}</h1>
-          <button className="float-right bg-black text-white font-bold py-2 px-4 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-opacity-50">
-            Buy Now
-          </button>
+    return (
+        <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4">
+            <h1 className="text-3xl font-bold mb-4">Order Confirmed!</h1>
+            <p className="text-lg text-gray-700 mb-6">
+                Thank you for your order. You will receive a confirmation email shortly.
+            </p>
+            <button
+                onClick={() => navigate("/")} // Next.js navigation
+                className="mt-4 bg-blue-500 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-blue-600 transition duration-300 ease-in-out"
+            >
+                Go back!
+              
+            </button>
         </div>
-      ))}
-    </div>
-  );
+    );
 }
 
 export default Discount;
