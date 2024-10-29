@@ -32,13 +32,8 @@ const Home = () => {
             </button>
           </div>
            <div>
-
-         
+            
           </div>
-         
-    
-         
-         
         </div>
       );
     
