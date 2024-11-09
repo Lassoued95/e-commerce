@@ -1,6 +1,7 @@
 "use client";
 import { useNavigate } from "react-router-dom";
 
+
 function Discount() {
     const navigate = useNavigate();
 
@@ -11,12 +12,15 @@ function Discount() {
                 Thank you for your order. You will receive a confirmation email shortly.
             </p>
             <button
-                onClick={() => navigate("/")} // Next.js navigation
+                onClick={() => navigate("/")} 
                 className="mt-4 bg-black text-blue-50 font-bold py-2 px-4 rounded-lg shadow-md hover:bg-gray-300 transition duration-300 ease-in-out"
             >
                 Go back
               
             </button>
+           
+ 
+
         </div>
     );
 }
