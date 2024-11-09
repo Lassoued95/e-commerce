@@ -1,21 +1,25 @@
+
 "use client";
+
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-// Exporting products array
 export const products = [
   { id: 1, name: "shoes", image: "shoes_prod.png" },
   { id: 2, name: "jacket", image: "jacket_prod.png" },
   { id: 3, name: "hoodie", image: "hoodie_prod.png" },
   { id: 4, name: "bag", image: "bag_prod.png" },
   { id: 5, name: "cap", image: "cap1.png" },
+
   { id: 6, name: "pants", image: "pantalon.png" },
   { id: 7, name: "glasses", image: "glasses555.jpg" },
   { id: 8, name: "shorts", image: "short1.png" },
+
 ];
 
 function Product() {
   const navigate = useNavigate();
+
 
   const handleProductClick = (id) => {
     switch (id) {
@@ -75,7 +79,7 @@ function Product() {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -7,8 +7,10 @@ const Home = () => {
     const navigate1 = useNavigate();
 
     return (
+
       <>
       
+
           <img 
             src="aa-removebg-preview.png"
             className="ml-[55%] h-[55%] animate-sabat"
@@ -29,10 +31,16 @@ const Home = () => {
               Shop Now
             </button>
           </div>
+
+           <div>
+            
+          </div>
+        </div>
+
            </>
         
          
-       
+
       );
     
 };
