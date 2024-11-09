@@ -17,7 +17,7 @@ export const productsG = [
   
 ];
 
-function Cap() {
+function Glasses() {
   const [searchTerm, setSearchTerm] = useState(""); // Search state
   const [filterCategory, setFilterCategory] = useState(""); // Active category filter
   const productRef = useRef(null); // For scroll behavior
@@ -117,4 +117,4 @@ function Cap() {
   );
 }
 
-export default Cap;
+export default Glasses;

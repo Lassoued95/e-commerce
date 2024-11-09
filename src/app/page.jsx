@@ -11,12 +11,11 @@ import Shoes from "./product/Shoes.jsx";
 import Jacket from "./product/Jacket.jsx";
 import Hoodie from "./product/Hoodie.jsx";
 import Bag from "./product/Bag.jsx";
-import Product_Details from "./product/Product_Details.jsx";
 import ContactFrom from "./product/ContactFrom.jsx";
 
 import Cap from "./product/Cap.jsx";
 import Pantalon from "./product/Pantalon.jsx";
-import Hoodie from "./product/Glasses.jsx";
+import Glasses from "./product/Glasses.jsx";
 import Children_prod from "./product/Short.jsx";
 import Product_Details from "./product/Product_Details.jsx";
 
@@ -56,7 +55,7 @@ const App = () => {
                     <Route path="/product/ContactFrom" element={<ContactFrom />} />
                       <Route  path="/product/cap" element={<Cap/>}/>
                     <Route  path="/product/pants" element={<Pantalon/>}/>
-                    <Route  path="/product/glasses" element={<Hoodie/>}/>
+                    <Route  path="/product/glasses" element={<Glasses />}/>
                     <Route  path="/product/short" element={<Children_prod/>}/>
                     <Route path="/product/cap/:id" element={<Product_Details message="Hello from parent!" />} />
                     <Route path="/product/pants/:id" element={<Product_Details message="Hello from Pants parent!" />} />
