@@ -7,17 +7,17 @@ const Home = () => {
     const navigate1 = useNavigate();
 
     return (
-        <div className="min-h-screen">
-         
-     
-    
+
+      <>
+      
+
           <img 
-            src="air.png"
+            src="aa-removebg-preview.png"
             className="ml-[55%] h-[55%] animate-sabat"
           />
     
           {/* Promo Section */}
-          <div className="bg-black text-center py-20 mt-[-40%] h-[80vh] animate-zoomIn  overflow-x-hidden">
+          <div className="bg-black text-center py-20 mt-[-34%] h-[80vh] animate-zoomIn  overflow-x-hidden">
             <h1 className="text-4xl md:text-6xl font-bold text-white tracking-wide uppercase mb-4 animate-font">
               Step Into Comfort and Style
             </h1>
@@ -31,12 +31,20 @@ const Home = () => {
               Shop Now
             </button>
           </div>
+
            <div>
             
           </div>
         </div>
+
+           </>
+        
+         
+
       );
     
 };
 
+
 export default Home;
+
