@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { MdFacebook } from "react-icons/md";
 
 const Home = () => {
     const navigate = useNavigate();
-    const navigate1 = useNavigate();
 
     return (
 

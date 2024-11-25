@@ -10,6 +10,9 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily:{
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
       keyframes: {
         font: {
           '0%': { transform: 'translateX(1000px)', opacity: '0' },
@@ -24,6 +27,7 @@ module.exports = {
         font: 'font 3s ease-in-out',
         sabat: 'sabat 3s ease-in-out', 
       },
+    
     },
   },
   plugins: [],

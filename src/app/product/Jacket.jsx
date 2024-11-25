@@ -92,9 +92,7 @@ function Jacket() {
                 <p className="text-gray-500 mt-2">{jacket.category}</p>
                 <p className="text-gray-700 text-sm mt-1 line-clamp-3">{jacket.description}</p>
 
-                <button className="mt-6 w-full py-3 bg-black text-white font-bold rounded-lg hover:bg-gray-900 transition-colors">
-                  Buy Now
-                </button>
+              
               </div>
             ))}
           </div>
