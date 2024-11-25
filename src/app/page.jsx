@@ -88,7 +88,7 @@ const App = () => {
 
            
  
-            <footer className="w-full bg-black text-white py-8 mt-10">
+            <footer className="w-full bg-black text-black py-8 mt-10">
   <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
     <div className="flex items-center justify-center mb-4 md:mb-0">
       <span className="text-lg font-semibold">L&B Bazaar</span>
